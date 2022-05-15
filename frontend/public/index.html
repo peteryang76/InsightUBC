@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>Insight UBC but PINK!</title>
+	<link rel = "icon" href = "images/icon.png">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<h1>Insight UBC but PINK!</h1>
+
+
+<section >
+
+	<div class="leftdiv" id = "leftdiv">
+		<h2>Inspect a Course</h2>
+<p>Enter a valid course name in the text box</p>
+		<br>
+<!--<p>Select at least one key you would like to include in the output</p>-->
+		<label for="inputName">Course Department: </label>
+	<input type = "text" id = "inputName" placeholder="e.g. asia"> <br /><br />
+		<label for="inputNumber">Course Number:</label>
+	 <input type = "text" id = "inputNumber" placeholder="e.g. 300"> <br /><br />
+		<p>Please select at least one of the following:</p>
+	<input type = "checkbox" id = "courses_avg">
+	<label for = "courses_avg"> courses average</label><br>
+	<input type = "checkbox" id = "courses_instructor">
+	<label for = "courses_instructor"> courses instructor</label><br>
+	<input type = "checkbox" id = "courses_title">
+	<label for = "courses_title"> courses title</label><br>
+	<input type = "checkbox" id = "courses_pass">
+	<label for = "courses_pass">number of students passed</label><br>
+	<input type = "checkbox" id = "courses_fail">
+	<label for = "courses_fail">number of students failed</label><br>
+	<input type = "checkbox" id = "courses_audit">
+	<label for = "courses_audit">number of students audited</label><br>
+	<input type = "checkbox" id = "courses_uuid">
+	<label for = "courses_uuid"> courses uuid</label><br>
+	<input type = "checkbox" id = "courses_year">
+	<label for = "courses_year"> courses year</label><br> <br>
+
+	<button id = "Inspect" onclick = inspectACourse() class = "button">Search</button>
+		<br><br>
+
+	<script type = "text/javascript" src = "frontend.js"></script>
+	</div>
+
+
+
+	<div class="rightdiv" id = "rightdiv">
+<h2>Find a Proper Room</h2>
+<p>Enter a valid building name in the text box</p>
+		<br>
+		<label for="bName">Building Name:</label>
+		<input  type = "text" id = "bName" placeholder="e.g. DMP">
+	<br> <br>
+		<p>Select preferred room type</p>
+		<br>
+	<label for = "rooms_type">Choose the preferred type of room: </label>
+	<select name = "rooms_type" id = "rooms_type">
+		<option value = "any">any</option>
+		<option value = "Open Design General Purpose">Open Design General Purpose</option>
+		<option value = "Case Style">Case Style</option>
+		<option value = "Small Group">Small Group</option>
+		<option value = "Tiered Large Group">Tiered Large Group</option>
+	</select>
+	<br> <br>
+	<label for = "rooms_furniture">Choose the preferred furniture:</label>
+	<select name = "rooms_furniture" id = "rooms_furniture">
+		<option value = "any">any</option>
+		<option value = "Classroom-Fixed Tablets">Classroom-Fixed Tablets</option>
+		<option value = "Classroom-Movable Tables & Chairs">Classroom-Movable Tables & Chairs</option>
+		<option value = "Classroom-Fixed Tables/Movable Chairs">Classroom-Fixed Tables/Movable Chairs</option>
+	</select>
+	<br> <br> <br>
+	<button id = "FindRoom" onclick = findRoom() class = "button">Search</button>
+		<br><br> <br><br> <br><br>
+	<script type = "text/javascript" src = "frontend.js"></script>
+	</div>
+</section>
